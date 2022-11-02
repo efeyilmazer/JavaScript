@@ -1,2 +1,0 @@
-# JavaScript
-Doing some exercises

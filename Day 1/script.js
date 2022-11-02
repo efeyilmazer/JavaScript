@@ -5,7 +5,7 @@ console.log("Hello World");
             //Değişken tanımlama kuralları
 
 let x;
-x="Efekan";
+x = "Efekan";
 console.log(x);
 
 const email="efekan1232@gmail.com";
@@ -20,7 +20,7 @@ let z;
 console.log(typeof z);
 
 //(null)
-let c=null;
+let c = null;
 console.log(typeof c);
 
 //(string)
@@ -36,15 +36,14 @@ let online = true;
 console.log(typeof online)
 
 
-            //Reference Types - Objects
-
+//Reference Types - Objects
 //(array,object)
 let cars = ["Volvo","Bmw","Mercedes"]
 console.log(typeof cars)
 
 let person={
-    namee:"Efekan",
-    age:22
+    namee: "Efekan",
+    age: 22
 }
 console.log(typeof person)
 
