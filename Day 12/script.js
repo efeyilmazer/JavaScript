@@ -4,10 +4,10 @@ function karesiniAl(sayi){
     return sayi*sayi;
 }
 
-// let a = karesiniAl(2); //a değeri 4
-// let b = karesiniAl(4); //b değeri 16
+let a = karesiniAl(2); //a değeri 4
+let b = karesiniAl(4); //b değeri 16
 
-// console.log(a,b);
+console.log(a,b);
 
 function toplam(sayi1,sayi2){
     function karesiniAl(x){
