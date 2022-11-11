@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container .redBox{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.container .greenBox{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.container .blueBox{
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
