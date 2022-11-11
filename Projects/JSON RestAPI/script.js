@@ -10,8 +10,19 @@ function getAll(){
             let html = "";
 
             info.data.forEach(Element=>{
-                
+                html += 
+                `
+                <div class="card">
+                <div class="card-name">
+                ${Element.first_name}</div>
+                <div class="card-email">
+                ${Element.email}</div>
+                <div class="card-picture">
+                    <img src="${Element.avatar}" alt="" />
+                </div>
+            </div>`
             });
+            document.querySelector("#placeholder").innerHTML = html;
         }
     }
     xhr.send();
