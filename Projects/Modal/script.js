@@ -1,16 +1,19 @@
-var modalOpen = document.querySelector("#open");
-var modal = document.querySelector(".modal");
-var modalForm = document.querySelector("#form");
-var modalClose = document.querySelector("#close");
-modalOpen.addEventListener("click", () => {
-  console.log("clicked open button");
+let modalOpen = document.querySelector("#open");
+let modal = document.querySelector(".modal");
+let modalForm = document.querySelector("#form");
+let ModalClose = document.querySelector("#close");
+
+modalOpen.addEventListener("click",
+function(){
+  console.log("clicked");
   modal.style.display = "flex";
-  setTimeout(() => {
-    modalForm.style.left = "50%";
-  }, 200);
+  setTimeout(function(){
+    modalForm.style.left ="50%";
+}, 0);
+modalOpen.style.display ="none";
 });
 
-modalClose.addEventListener("click", () => {
-  console.log("clicked close button");
+ModalClose.addEventListener("click", function(){
   modal.style.display = "none";
 });
+
