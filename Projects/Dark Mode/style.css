@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  transition: background .3s ease;
+}
+
+.mode {
+  width: 70px;
+  height: 35px;
+  background-color: #111;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  transform: scale(1.2);
+  transition: background .2s ease;
+}
+
+.mode_moon {
+  width: 25px;
+  height: 25px;
+  background-image: url("moon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.mode_sun {
+  width: 25px;
+  height: 25px;
+  background-image: url("sun.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mode_ball {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #fff;
+  left: 5px;
+  transition: left .2s ease;
+}
