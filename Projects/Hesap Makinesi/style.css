@@ -1,0 +1,32 @@
+table {
+  background-color: #ddd;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border: 5px solid #ddd;
+  border-radius: 5px;
+}
+.btn{
+  width: 60px;
+  height: 60px;
+  background-color: #efefef;
+  cursor: pointer;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.btn.btn-first{
+  text-align: right;
+  box-sizing: border-box;
+  padding-right: 20px;
+  background-color: #fff;
+  font-size: 25px;
+}
+.btn:hover{
+  background-color: #fff;
+}
