@@ -21,12 +21,6 @@ body {
   padding: 50px;
 }
 
-.efe {
-  position: absolute;
-  top: 100px;
-  color: #ff7979;
-}
-
 .container.show-nav {
   transform: rotate(-20deg);
 }
@@ -49,7 +43,9 @@ body {
 .container.show-nav .circle {
   transform: rotate(-70deg);
 }
+
 .circle button {
+  cursor: pointer;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -76,12 +72,9 @@ body {
 
 .container.show-nav + nav li {
   transform: translateX(0);
-  transition-delay: 0.3s ;
+  transition-delay: 0.3s;
 }
-.container.show-nav + nav .efe {
-  transform: translateY(0%);
-  transition: transform .4s ease 0.5s;
-}
+
 nav {
   position: fixed;
   bottom: 40px;
@@ -94,12 +87,17 @@ nav ul {
   padding-left: 30px;
 }
 
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
 nav ul li i {
   font-size: 20px;
   margin-right: 10px;
-}
-nav ul li:hover {
-  color: #ddd;
 }
 
 nav ul li + li {
@@ -111,20 +109,23 @@ nav ul li + li + li {
   margin-left: 30px;
   transform: translateX(-200%);
 }
-nav ul li {
-  text-transform: uppercase;
-  color: #fff;
-  margin: 40px 0;
-  transform: translateX(-100%);
-  transition: transform 0.4s ease-in;
-  cursor: pointer;
+
+nav a{
+  color: #fafafa;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+nav a:hover {
+  color: #FF7979;
+  font-weight: bold;
 }
 
 .content img {
   max-width: 100%;
 }
 
-.content{
+.content {
   max-width: 1000px;
   margin: 50px auto;
 }
@@ -141,16 +142,4 @@ nav ul li {
 .content p {
   color: #333;
   line-height: 1.5;
-}
-
-.efe {
-  position: fixed;
-  top: 950px;
-  right: 250px;
-  color: #fff;
-  background-color: #333;
-  border: none;
-  font-size: 25px;
-  transform: translateY(150%);
-  transition: transform 0.1s ease-in;
 }
