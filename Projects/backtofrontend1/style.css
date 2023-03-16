@@ -1,0 +1,293 @@
+* , html {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 1600px;
+    height: 1200px;
+    background-color: #E8E8FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms all;
+}
+.background {
+    position: absolute;
+    left: 90px;
+    width: 276px;
+    height: 950px;
+    background-color: #EE4D38;
+    border-radius: 46px;
+    z-index: -1;
+
+}
+.container {
+    z-index: 99;
+    box-shadow: 0 49px 32px rgb(56,56,150, 0.15);
+    width: 1319px;
+    height: 879px;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+}
+
+.container nav {
+    background-color: #F8F8FF;
+    height: 879px;
+    width: 260px;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    padding-top: 58px;
+    margin-bottom: 55px;
+}
+
+.profile .picture img {
+    width: 55px;
+    height: 55px;
+    border-radius: 17px;
+    margin-right: 14px;
+}
+.profile .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.profile .name h2 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #1A194D;
+}
+
+.profile .name p {
+    font-size: 14px;
+    color: #62618F;
+}
+
+.ul-li ul .active li {
+    transition: 300ms all;
+    color: #1A194D;
+    font-weight: bold;
+}
+
+.ul-li ul li {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #62618F;
+}
+
+.ul-li ul li i {
+    margin-right: 15px;
+    width: 32px;
+    height: 32px;
+}
+
+.ul-li ul .btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.ul-li ul .active::before {
+    padding-bottom: 5px;
+    left: 180px;
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 50px;
+    background-color: #EE4D38;
+    border-radius: 25px;
+}
+
+.ul-li ul .btn li {
+    transition: 300ms all;
+}
+
+.ul-li ul .btn li:hover {
+    color: #1A194D;
+    font-weight: bold;
+}
+.ul-li ul .billing::before {
+    content: '';
+    width: 15px;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.ul-li ul .bttn {
+    background-color: transparent;
+    cursor: pointer;
+    color: #62618F;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 340px;
+    transition: 300ms all;
+}
+
+.ul-li ul .bttn:hover {
+    color: #1A194D;
+    font-weight: bold;
+}
+
+
+.rightcontainer {
+    margin: 72px;
+}
+.rightcontainer h1 {
+    color: #1A194D;
+    font-weight: bold;
+    margin-bottom: 49px;
+}
+.rightcontainer h3 {
+    color: #1A194D;
+    margin-bottom: 4px;
+}
+.rightcontainer .manage {
+    font-size: 14px;
+    color: #62618F;
+    margin-bottom: 50px;
+}
+
+.rightcontainer ul .date {
+    font-size: 14px;
+    color: #62618F;
+}
+
+.rightcontainer ul li {
+    padding: 10px 15px 10px 15px;
+    color: #1A194D;
+    font-size: 16px;
+    display: flex;
+    gap: 114px;
+    justify-content: space-between;
+    align-items: center;
+    transition: 300ms all;
+}
+.rightcontainer ul li p {
+    width: 115px;
+    text-align: start;
+}
+.rightcontainer ul li:hover:not(:first-child) {
+    border-radius: 9px;
+    box-shadow: 0 8px 19px rgb(56,56,150, 0.15);
+}
+
+.rightcontainer ul li button {
+    border: 1px solid #CBCBD9;
+    border-radius: 8px;
+    font-size: 16px;
+    background: transparent;
+    width: 114px;
+    height: 40px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.rightcontainer ul li button:hover {
+    background-color: #1A194D;
+    color: #fff;
+}
+
+.rightcontainer a {
+    font-size: 16px;
+    color: #EE4D38;
+    display: inline-block;
+    margin: 16px 0 81px 0;
+}
+
+.rightcontainer span {
+    display: flex;
+    align-items: center;
+}
+
+.rightcontainer img {
+    width: 60px;
+    height: 20px;
+    border: 1px solid #CBCBD9;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.rightcontainer span p {
+    font-size: 14px;
+    color: #1A194D;
+    margin: 0px 300px 0 15px;
+}
+
+.rightcontainer span button {
+    font-size: 16px;
+    width: 98px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #CBCBD9;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+
+.rightcontainer span button:hover {
+    background-color: #1A194D;
+    color: #fff;
+}
+
+.rightcontainer .plan {
+    position: absolute;
+    right: 250px;
+    top: 320px;
+    width: 194px;
+    height: 157px;
+    background-color: #EE4D38;
+    border-radius: 16px;
+    color: #fff;
+    padding: 32px;
+}
+
+.rightcontainer .plan h6 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.rightcontainer .plan h2 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+.rightcontainer .plan p {
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+.rightcontainer .plan button {
+    width: 194px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid #CBCBD9;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 300ms all;
+}
+.rightcontainer .plan button:hover {
+    background-color: #fff;
+    color: #EE4D38;
+    border: 1px solid #EE4D38;
+}
