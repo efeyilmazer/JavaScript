@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: steelblue;
+  background: url(lw.png) no-repeat center/cover;
   color: #fff;
   font-family: 'Muli', sans-serif;
   display: flex;
